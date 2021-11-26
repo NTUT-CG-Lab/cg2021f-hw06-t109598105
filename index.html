@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<meta charset="utf-8">
+	<link href="./vendor.bundle.css" rel="stylesheet"><link href="./main.bundle.css" rel="stylesheet"></head>
+    <body>
+        <div class="gui-container left" id="gui-left"></div>
+        <div class="gui-container right" id="gui-right"></div>
+        <div id="btn-container" style="position: absolute;top:0;left:0;z-index:99;"></div>
+        <div class="dd-container">
+            <div>
+                <label for="dropdown-list" style="margin-right: .5rem"> 選擇模組: </label>
+                <select id="dropdown-list" style="font-size:1.5rem">
+                </select>
+            </div>
+        </div>
+        <div id="mycanvas"></div>
+        
+        
+
+        <div id="user-panel" class="my-show">
+            <div id="close-btn-container" class="inner-row" style="margin-bottom: 1rem">
+                <div id="close-btn">
+                    <img src="./Media/close.png">
+                </div>
+            </div>
+
+            <div id="main-panel-content">
+                <h1> 功能說明 </h1>
+                <div class="inner-row"> 當前模型: <span id="current-model"></span> </div>
+                <div class="inner-row"> 切換模型(前/後): 鍵盤 A/D </div>
+                <div class="inner-row"> 擷取目前場景: C </div>
+                <div class="inner-row"> 開啟/關閉說明面板: M </div>
+            </div>
+        </div>
+        <div id="message-container"></div>
+    <script defer="defer" src="./vendor.bundle.js"></script><script defer="defer" src="./main.bundle.js"></script></body>
+        
+    
+
+</html>
